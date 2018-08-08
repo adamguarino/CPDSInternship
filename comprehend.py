@@ -2,7 +2,9 @@
 
 import boto3
 client = boto3.client('comprehend')
+#Prompts you to input text in the console to be analyzed
 input = input('Enter text: ')
+#Creates an array and adds each method to the list
 response = []
 response.append(client.detect_sentiment(    #detects the "Tone" of the inputted text: Positive, Neutral, Mixed or Negative
     Text = input,
@@ -21,4 +23,4 @@ response.append(client.detect_syntax(       #detects the part of speech for each
     LanguageCode='en'
     ))
 for i in response:
-    print(i)
+    print(i) 
