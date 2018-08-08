@@ -2,7 +2,7 @@ import sqlite3
 import xlsxwriter
 from databaseGUI import *   #simple class written for user input
 
-#cleates a new Excel workbook
+#creates a new Excel workbook
 workbook = xlsxwriter.Workbook('WEBCLSDES.xlsx')
 worksheet = workbook.add_worksheet()
 
