@@ -16,6 +16,6 @@ def get_data():
 data = get_data()
 print(data.json())
 
-#Creates a writable json file and writes the returned JSON data to the file
+#Creates a json file, "w" means you can write to it, and json.dump writes the JSON result to the file
 with open("data_file.json", "w") as write_file:
     json.dump(data.json(), write_file)
