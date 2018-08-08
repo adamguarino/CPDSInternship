@@ -1,18 +1,21 @@
 import sqlite3
 import xlsxwriter
-from databaseGUI import *
+from databaseGUI import *   #simple class written for user input
 
+#cleates a new Excel workbook
 workbook = xlsxwriter.Workbook('WEBCLSDES.xlsx')
 worksheet = workbook.add_worksheet()
 
+#some optional formatting for the workbook
 format = workbook.add_format()
 format.set_align("vcenter")
 worksheet.set_column(1, 1, 15)
 
-
+#sets up the connection to the SQL Database
 connection = sqlite3.connect("myTable2.db")
 crsr = connection.cursor()
 
+#prompts the user for the table in the database selected above
 gui = Gui()
 tableName = gui.startLoop()
 
