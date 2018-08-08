@@ -24,7 +24,7 @@ class Gui:
         
     def startLoop(self):    #once the mainloop ends, the output text will be returned to the startLoop() function
         self.wd.mainloop()
-        return self.output
+        return self.output 
         
         
 
