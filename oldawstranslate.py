@@ -1,7 +1,7 @@
 # AWS Version 4 signing example
 
 # Translate API (TranslateText)
-
+ 
 # For more information about using Signature Version 4, see http://docs.aws.amazon.com/general/latest/gr/sigv4_signing.html.
 # This example makes a POST request to Amazon Translate and 
 # passes the text to translate JSON in the body (payload) 
