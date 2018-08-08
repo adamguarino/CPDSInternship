@@ -10,7 +10,7 @@ bucketname = 'bucketname'
 filename = 'filename'
 #s3.upload_file(filename,bucketname,filename) #uploading files just requires a bucket and a file
 
-key = 'key' #a file's key can be optained from the AWS S3 Client
+key = 'key' #a file's key can be obtained from the AWS S3 Client by clicking the area around it
 try:
     s3.Bucket(bucketname).download_file(key,filename)
 except botocore.exceptions.ClientError as e:    #exception handling if the file doesn't exist
