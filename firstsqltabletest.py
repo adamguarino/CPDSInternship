@@ -37,7 +37,7 @@ crsr.execute(sql_command)
 
 sql_command = """SELECT * FROM myTable4;"""
 crsr.execute(sql_command)
-rows = crsr.fetchall()
+rows = crsr.fetchall() 
 print(rows)
 
 # To save the changes in the files. Never skip this. 
